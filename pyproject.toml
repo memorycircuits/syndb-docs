@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "syndb-docs"
+version = "0.1.0"
+description = "Documentation for SynDB"
+authors = ["caniko <git@rotas.mozmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+mkdocs-material = "*"
+
+mkdocstrings-python = "^1.10.3"
+mkdocs-macros-plugin = "^1.0.5"
+mkdocstrings = {version = "^0.25.1", extras = ["python"]}
+griffe-inherited-docstrings = "^1.0.0"
+mkdocs-minify-plugin = "^0.8.0"
+mkdocs-redirects = "^1.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

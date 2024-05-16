@@ -1,0 +1,97 @@
+site_name: Synapse DB
+site_url: https://docs.syndb.org
+site_author: Can H. Tartanoglu
+site_description: Synapse DB is a database for storing and meta-analyzing high resolution microscopy derived metrics.
+theme:
+  name: material
+  logo: assets/cube_white.svg
+  favicon: assets/favicon.png
+
+  features:
+    - content.tooltips
+    - navigation.top
+    - navigation.instant
+    - navigation.instant.progress
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-3
+        name: Switch to light mode
+
+extra_css:
+  - assets/custom.css
+
+watch:
+  - includes
+
+plugins:
+  - search
+  - minify
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [../backend/syndb-api/syndb_api/]
+  - macros:
+#      include_dir: includes/vars
+      include_yaml:
+        - includes/macros.yaml
+  - redirects:
+      redirect_maps:
+        index.md: get_started/0-home.md
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
+extra:
+  analytics:
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
+nav:
+  - Get Started:
+    - Home: get_started/0-home.md
+    - Why?: get_started/1-why_syndb.md
+    - Install: get_started/2-install.md
+    - Quick Start: get_started/3-quick_start.md
+  - Dataset:
+    - Overview: dataset/0-overview.md
+    - Search: dataset/1-search.md
+    - Upload: dataset/2-upload.md
+  - Guides:
+    - Choose license for your dataset: guides/choose_dataset_license.md
+  - Troubleshoot: troubleshoot.md

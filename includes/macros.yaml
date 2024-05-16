@@ -1,0 +1,14 @@
+api:
+  url: https://api.syndb.xyz
+  openapi: https://nrp-api.syndb.xyz/openapi.json
+
+dataset:
+  schema_list_url: '[schema overview](https://github.com/memorycircuits/syndb-constants/blob/trunk/syndb_constants/schema.py "Link to GitHub where the overview is versioned")'
+
+software:
+  pandas_read_parquet: '[`pandas`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_parquet.html "Link to the pandas documentation")'
+  polars_read_parquet: '[`polars`](https://docs.pola.rs/user-guide/io/parquet/ "Link to the polars documentation")'
+
+discord:
+  url: https://discord.gg/tmF5WTbFVY
+  hyperlink: '[Discord](https://discord.gg/tmF5WTbFVY "Invite link to the SynDB Discord server")'

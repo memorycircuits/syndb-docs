@@ -1,4 +1,4 @@
-{% set overview_link = "[overview article](0-overview.md)" %}
+{% assign overview_link = "[overview article](0-overview.md)" %}
 
 # Upload
 

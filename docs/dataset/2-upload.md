@@ -1,11 +1,9 @@
-{% assign overview_link = "[overview article](0-overview.md)" %}
-
 # Upload
 
 !!! note "Prerequisites"
-    This article requires that you understand how data is stored on SynDB, we recommend reading through the {{ overview_link }}.
+    This article requires that you understand how data is stored on SynDB, we recommend reading through the [overview article](0-overview.md) if you are uncertain.
 
-Uploading to SynDB is multistep process, and requires understanding of the SynDB dataset model.
+Uploading to SynDB is a multistep process, and requires understanding of the SynDB dataset model.
 
 ## The process
 
@@ -48,7 +46,7 @@ The GUI will automatically assign UUIDs to each SynDB table unit. The relations 
 TODO
 
 #### 2. Selecting or creating the SynDB dataset metadata
-As mentioned, in the {{ overview_link }}, every dataset has a metadata defined by the data owner during the upload. You can either select an existing dataset or create a new one.
+As mentioned, in the "[overview article](0-overview.md)", every dataset has a metadata defined by the data owner during the upload. You can either select an existing dataset or create a new one.
 
 #### 3. Confirm and upload
 Before the upload starts you will be prompted to confirm the dataset and the data you are uploading. Once you confirm, the upload will start. Should be relatively quick.

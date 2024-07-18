@@ -14,6 +14,12 @@ pipx install syndb-cli[gui]
 pipx install syndb-cli
 ```
 
+### Upgrade
+To upgrade the SynDB CLI along with the GUI (if installed), run the following command:
+```bash
+pipx upgrade syndb-cli
+```
+
 ## Advanced
 SynDB provides access to its REST API for advanced users to access the data directly. The API can be accessed through the [OpenAPI documentation]({{ api.url }}). For a more tailored approach, you may interact with the API through the `syndb-data` Python package:
 

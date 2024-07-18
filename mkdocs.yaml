@@ -28,7 +28,7 @@ theme:
         name: Switch to light mode
 
 extra_css:
-  - assets/custom.css
+  - stylesheets/extra.css
 
 watch:
   - includes

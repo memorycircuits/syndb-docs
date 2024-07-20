@@ -18,7 +18,7 @@ You must accept the terms and conditions before uploading data. The terms includ
 - Data licensing agreement with the license of your choice, see [guide to pick license](../guides/choose_dataset_license.md)
 
 #### Data standardization
-Your imaging metrics must be in dataframe or tabular data format like Excel, CSV, or (even better) parquet. The column names must be in the SynDB standardized format. You can find supported column names for each SynDB table in the {{ dataset.schema_list_url }}.
+Your imaging metrics must be in dataframe or tabular data format like Excel, CSV, or (even better) parquet. The column names must be in the SynDB standardized format. You can find supported column names for each SynDB table in the [schema overview]({{ source.dataset.schema_list_url }} "Link to GitHub where the overview is versioned").
 
 Raw files including meshes or SWL files, you can upload them as well. You have to place the absolute path to the file in your table file. The following are supported (this list is upto date):
 
@@ -34,19 +34,21 @@ Once you enter the upload page, you will be prompted to log in to your SynDB acc
 You can upload data using the CLI or the GUI. You could mix the usage of both as well, define the dataset in the GUI and upload using the CLI. We recommend that you only use the GUI for the first time.
 
 #### 1. Assign IDs, and correlate relations
-Each SynDB table unit requires a unique ID assigned before being uploaded to the platform. The GUI does this automatically, but not the CLI. When you have multiple SynDB tables under one dataset it is expected that these have some relations with each other.
+Each SynDB unit requires a unique ID assigned before being uploaded to the platform. The GUI does this automatically, but not the CLI. When you have multiple SynDB tables under one dataset it is expected that these have some relations with each other.
 
 !!! danger "Important"
-    It is disallowed to upload SynDB table data that are unrelated under the same dataset! This will cause undefined behavior.
+    As it may lead to undefined behaviour, it is disallowed to upload SynDB table data that are unrelated under the same dataset!
+
+    Meaning that you cannot upload a table of neurons and a table of synapses under the same dataset unless every SynDB unit are related.
 
 ##### GUI
-The GUI will automatically assign UUIDs to each SynDB table unit. The relations are correlated based on the top-down hierarchy of the tables, 
+The GUI will automatically assign UUIDs to each SynDB unit. The relations are correlated based on the top-down hierarchy of the tables, you may find the latest version of the [hierarchy]({{ source.dataset.hierarchy_url }}) in the source on GitHub.
 
 ##### CLI
 TODO
 
 #### 2. Selecting or creating the SynDB dataset metadata
-As mentioned, in the "[overview article](0-overview.md)", every dataset has a metadata defined by the data owner during the upload. You can either select an existing dataset or create a new one.
+As mentioned, in the [overview article](0-overview.md), every dataset has a metadata defined by the data owner during the upload. You can either select an existing dataset or create a new one.
 
 #### 3. Confirm and upload
 Before the upload starts you will be prompted to confirm the dataset and the data you are uploading. Once you confirm, the upload will start. Should be relatively quick.

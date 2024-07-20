@@ -14,5 +14,7 @@ After installing the SynDB CLI, which contains the GUI, you may run the GUI usin
 syndb gui
 ```
 
-!!! note "Note"
-    The GUI will open in your default web browser, and in case the browser is already open, a new tab will be created. You might also have to refresh the page to see the GUI.
+The GUI will open in your default web browser, and in case the browser is already open, a new tab will be created. You might also have to refresh the new page to see the GUI.
+
+!!! note "Dark Mode"
+    Use the [dark reader](https://darkreader.org/) extension for dark mode in the GUI.

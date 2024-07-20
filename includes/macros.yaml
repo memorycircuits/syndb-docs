@@ -2,8 +2,10 @@ api:
   url: https://api.syndb.xyz
   openapi: https://nrp-api.syndb.xyz/openapi.json
 
-dataset:
-  schema_list_url: '[schema overview](https://github.com/memorycircuits/syndb-constants/blob/trunk/syndb_constants/schema.py "Link to GitHub where the overview is versioned")'
+source:
+  dataset:
+    schema_list_url: https://github.com/memorycircuits/syndb-constants/blob/trunk/syndb_constants/schema.py
+    hierarchy_url: https://github.com/memorycircuits/syndb-constants/blob/trunk/syndb_constants/table.py#L38-L54
 
 software:
   pandas_read_parquet: '[`pandas`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_parquet.html "Link to the pandas documentation")'

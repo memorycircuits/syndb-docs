@@ -11,5 +11,5 @@
 
 *[SynDB table]: The database table for each compartment and neuronal structure that is defined on the platform
 *[SynDB tables]: The database table for each compartment and neuronal structure that is defined on the platform
-*[SynDB table unit]: A single row in a SynDB table, i.e. a single instance of structure or compartment
+*[SynDB unit]: A single row in a SynDB table, i.e. a single instance of structure or compartment
 *[dataset IDs]: Identifiers of SynDB datasets in the platform

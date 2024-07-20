@@ -9,7 +9,8 @@ When pipx is ready, install the SynDB CLI and GUI using the following commands:
 ```bash
 pipx install syndb-cli[gui]
 ```
-**Advanced case**, you know that you won't use the GUI:
+
+### Advanced: No GUI
 ```bash
 pipx install syndb-cli
 ```

@@ -16,5 +16,11 @@ syndb gui
 
 The GUI will open in your default web browser, and in case the browser is already open, a new tab will be created. You might also have to refresh the new page to see the GUI.
 
-!!! note "Dark Mode"
+!!! tip "Dark Mode"
     Use the [dark reader](https://darkreader.org/) extension for dark mode in the GUI.
+
+
+## Next steps
+- [Search data](../dataset/1-search.md)
+- [Upload data](../dataset/2-upload.md)
+- [API documentation](https://api.syndb.org/docs)

@@ -9,7 +9,7 @@ Uploading to SynDB is a multistep process, and requires understanding of the Syn
 
 ### Preparation
 
-We recommend you to follow the guide in the exact sequence provided. This ensures the instructions are followed effectively.
+We recommend you to follow the guide in the exact sequence provided. This ensures the instructions are followed effectively and idiomatically.
 
 #### Terms and conditions
 You must accept the terms and conditions before uploading data. The terms include:
@@ -36,10 +36,10 @@ You can upload data using the CLI or the GUI. You could mix the usage of both as
 #### 1. Assign IDs, and correlate relations
 Each SynDB unit requires a unique ID assigned before being uploaded to the platform. The GUI does this automatically, but not the CLI. When you have multiple SynDB tables under one dataset it is expected that these have some relations with each other.
 
-!!! danger "Important"
+!!! warning "Dataset integrity"
     As it may lead to undefined behaviour, it is disallowed to upload SynDB table data that are unrelated under the same dataset!
 
-    Meaning that you cannot upload a table of neurons and a table of synapses under the same dataset unless every SynDB unit are related.
+    Meaning that you cannot upload a table of neurons and a table of synapses under the same dataset unless each synapse has a relation to a neuron from the respective table of neurons.
 
 ##### GUI
 The GUI will automatically assign UUIDs to each SynDB unit. The relations are correlated based on the top-down hierarchy of the tables, you may find the latest version of the [hierarchy]({{ source.dataset.hierarchy_url }}) in the source on GitHub.

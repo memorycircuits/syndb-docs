@@ -9,6 +9,8 @@ theme:
 
   features:
     - content.tooltips
+    - content.tabs.link
+    - content.code.copy
     - navigation.top
     - navigation.instant
     - navigation.instant.progress
@@ -64,6 +66,17 @@ markdown_extensions:
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 
 extra:
   analytics:

@@ -1,6 +1,6 @@
 api:
   url: https://api.syndb.xyz
-  openapi: https://nrp-api.syndb.xyz/openapi.json
+  openapi: https://api.syndb.xyz/openapi.json
 
 source:
   dataset:

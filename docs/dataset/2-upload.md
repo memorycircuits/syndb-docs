@@ -15,7 +15,7 @@ We recommend you to follow the guide in the exact sequence provided. This ensure
 You must accept the terms and conditions before uploading data. The terms include:
 - Statement that the data is not false or misleading
 - Redistribution rights
-- Data licensing agreement with the license of your choice, see [guide to pick license](../guides/choose_dataset_license.md)
+- Data licensing agreement with the license of your choice, see [guide to pick license](../guides/choose_dataset_license.md); the default license is [ODC-BY](../guides/choose_dataset_license.md#open-data-commons-odc-licenses "Allows use with proper credit to the original creator, ensuring acknowledgment while enabling broad use.").
 
 #### Data standardization
 Your imaging metrics must be in dataframe or tabular data format like Excel, CSV, or (even better) parquet. The column names must be in the SynDB standardized format. You can find supported column names for each SynDB table in the [schema overview]({{ source.dataset.schema_list_url }} "Link to GitHub where the overview is versioned").

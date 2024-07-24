@@ -23,4 +23,4 @@ The GUI will open in your default web browser, and in case the browser is alread
 ## Next steps
 - [Search data](../dataset/1-search.md)
 - [Upload data](../dataset/2-upload.md)
-- [API documentation](https://api.syndb.org/docs)
+- [API documentation]({{ api.url }})

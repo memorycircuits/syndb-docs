@@ -17,21 +17,16 @@ You must accept the terms and conditions before uploading data. The terms includ
 - Redistribution rights
 - Data licensing agreement with the license of your choice, see [guide to pick license](../guides/choose_dataset_license.md); the default license is [ODC-BY](../guides/choose_dataset_license.md#open-data-commons-odc-licenses "Allows use with proper credit to the original creator, ensuring acknowledgment while enabling broad use.").
 
-#### Data standardization
-Your imaging metrics must be in dataframe or tabular data format like Excel, CSV, or (even better) parquet. The column names must be in the SynDB standardized format. You can find supported column names for each SynDB table in the [schema overview]({{ source.dataset.schema_list_url }} "Link to GitHub where the overview is versioned").
+#### Data structuring
+Your imaging metrics must be in dataframe or tabular data format like Excel, CSV, or (even better) parquet.
 
-Raw files including meshes or SWL files, you can upload them as well. You have to place the absolute path to the file in your table file. The following are supported (this list is upto date):
-
-- **Meshes** in `.glb` format, column name: `mesh_path`
-- **SWC** files, `.swc`, column name: `swc_path`
-
-You may request additional formats on the {{ discord.hyperlink }} channel.
+Read more about the [data structuring](../guides/contributors_data_structuring.md "Link to the data structuring guide") in the guide for contributors.
 
 ### Login
-Once you enter the upload page, you will be prompted to log in to your SynDB account if you are not already; furthermore, you must verify your academic status by logging in to you institution's account.
+Once you enter the upload page, you will be prompted to log in to your SynDB account if you are not already; furthermore, you must verify your academic status by logging in to your institution's account.
 
 ### The upload
-You can upload data using the CLI or the GUI. You could mix the usage of both as well, define the dataset in the GUI and upload using the CLI. We recommend that you only use the GUI for the first time.
+You can upload data using the CLI or the GUI; including mixing the usage of both. We recommend that you only use the GUI for the first time.
 
 #### 1. Assign IDs, and correlate relations
 Each SynDB unit requires a unique ID assigned before being uploaded to the platform. The GUI does this automatically, but not the CLI. When you have multiple SynDB tables under one dataset it is expected that these have some relations with each other.

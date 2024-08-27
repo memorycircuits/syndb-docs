@@ -9,7 +9,7 @@ The SynDB interfaces are implemented with the Python programming language. To ru
     
     There many solutions to both requirements, we recommend using [`pyenv`](https://github.com/pyenv/pyenv-installer) to solve 1st problem, and [pipx](https://pipx.pypa.io/latest/installation) for the 2nd. Follow the installation guide for your operating system.
 
-Install the SynDB CLI and GUI using the following commands:
+### Install
 === "pipx"
     ``` bash
     pipx install syndb-cli[gui]

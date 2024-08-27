@@ -58,6 +58,7 @@ markdown_extensions:
   - codehilite
   - footnotes
   - meta
+  - tables
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -107,4 +108,5 @@ nav:
     - Upload: dataset/2-upload.md
   - Guides:
     - Choose license for your dataset: guides/choose_dataset_license.md
+    - Structure your dataset: guides/contributors_data_structuring.md
   - Troubleshoot: troubleshoot.md

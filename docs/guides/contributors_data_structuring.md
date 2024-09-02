@@ -12,6 +12,9 @@ Each SynDB table has its own schema, which can be found on our [GitHub repositor
 
 The column names and the data stored under them must be in a format that is compatible with the type. You can find the supported column names for each SynDB table in the . You may use the [glossary](#glossary) at the end of this article for reference.
 
+!!! note "Nano"
+    We use nanometers as the unit for all measurements; includes the volume, radius, and distance.
+
 ### Sourcing raw data
 You may upload the sourcing raw data files including meshes or SWL to SynDB. Place the absolute path to the file in your table file. The following are supported:
 

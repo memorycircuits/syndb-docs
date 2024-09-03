@@ -7,13 +7,16 @@ The SynDB data platform is designed to provide a comprehensive and organized rep
 ### Metadata
 The metadata is used to define and retrieve datasets. It stores metadata about the data in the respective dataset:
 
-- Data owner
+- Brain region
 - Sourcing model animal
-- Genetic manipulations
+- Genetic manipulations (mutations)
 - Microscopy method
 - Publication information
 
 The metadata is defined by the data owner during upload.
+
+!!! warning "Dataset"
+    You must split your dataset into individual SynDB datasets if any of these fields differ within your own dataset.
 
 ### Image metrics
 The image metrics in SynDB are derived from high-resolution microscopy assays, processed using sophisticated algorithms and models. These metrics form the primary data of interest within the platform. Each neuronal compartment and structure has its own unique set of metric categories, which necessitates distinct database schemas. We will refer to these phenomena as SynDB tables in future references.

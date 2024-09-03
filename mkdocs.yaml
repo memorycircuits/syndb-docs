@@ -106,6 +106,7 @@ nav:
     - Overview: dataset/0-overview.md
     - Search: dataset/1-search.md
     - Upload: dataset/2-upload.md
+    - External: dataset/3-external.md
   - Guides:
     - Choose license for your dataset: guides/choose_dataset_license.md
     - Structure your dataset: guides/contributors_data_structuring.md

@@ -30,9 +30,9 @@ Most column types are self-explanatory, but some require additional explanation.
 The CID column defined in your table can have any unique hashable value, it will be replaced by a UUID when uploaded to SynDB. When uploading a relational dataset, the `cid` column in the parent will be used to correlate the relations to the children by their `parent_id`; meaning the hashable value in the parent `cid` column must match the `parent_id` in the child. `parent_enum` can be omitted as the compartments are defined at the tabular level, and will, therefore, be added automatically.
 
 ### Example
-Notice the `parent_id` column in the child table, this is the `cid` of the parent table. The `parent_enum` column is not present in the child table, as it is defined at the tabular level.
+Notice the `parent_id` column in the child table, this is the `cid` of the parent table. The `parent_enum` column is not present in the child table, as it is defined at the tabular file name.
 
-#### Vesicle, child
+#### vesicle.csv, child
 
 | cid | neurotransmitter | voxel_radius  | distance_to_active_zone | minimum_normal_length | parent_id | centroid_z | centroid_x | centroid_y |
 |-----|------------------|---------------|-------------------------|-----------------------|-----------|------------|------------|------------|
@@ -46,7 +46,7 @@ Notice the `parent_id` column in the child table, this is the `cid` of the paren
 | 7   | glutamate        | 32.0890       | 455.9293                | 23                    | 4         | 4505.232   | 1996.224   | 4953.6     |
 
 
-#### Axon, parent
+#### axon.csv, parent
 | voxel_volume   | mitochondria_count | total_mitochondria_volume | cid |
 |----------------|--------------------|---------------------------|-----|
 | 385668034.56   | 1                  | 93208043.52               | 1   |

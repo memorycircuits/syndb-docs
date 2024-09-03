@@ -18,9 +18,7 @@ You must accept the terms and conditions before uploading data. The terms includ
 - Data licensing agreement with the license of your choice, see [guide to pick license](../guides/choose_dataset_license.md); the default license is [ODC-BY](../guides/choose_dataset_license.md#open-data-commons-odc-licenses "Allows use with proper credit to the original creator, ensuring acknowledgment while enabling broad use.").
 
 #### Data structuring
-Your imaging metrics must be in dataframe or tabular data format like Excel, CSV, or (even better) parquet.
-
-Read more about the [data structuring](../guides/contributors_data_structuring.md "Link to the data structuring guide") in the guide for contributors.
+SynDB utilizes data standardization to facilitate uploads. Your imaging metrics must be in a tabular data format; for instance, `.xlsx`, `.csv`, or `.parquet`. Read more about the [data structuring](../guides/contributors_data_structuring.md "Link to the data structuring guide") in the contributor's guide.
 
 ### Login
 Once you enter the upload page, you will be prompted to log in to your SynDB account if you are not already; furthermore, you must verify your academic status by logging in to your institution's account.

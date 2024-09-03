@@ -21,10 +21,7 @@ You may upload the sourcing raw data files including meshes or SWL to SynDB. Pla
 - **Meshes** in `.glb` format, column name: `mesh_path`
 - **SWC** files, `.swc`, column name: `swc_path`
 
-This list is the main tracker for the supported formats.
-
-### Requests for new metrics
-You may request additional formats on the {{ discord.hyperlink }} channel. The SynDB team will review the request and consider adding the new format to the platform.
+This list is the main tracker for the supported formats. You may request additional formats on the {{ discord.hyperlink }} channel. The SynDB team will review the request and consider adding the new format to the platform.
 
 ## Columns
 Most column types are self-explanatory, but some require additional explanation.

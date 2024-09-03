@@ -34,8 +34,8 @@ Notice the `parent_id` column in the child table, this is the `cid` of the paren
 
 #### Vesicle, child
 
-| cid | neurotransmitter | voxel_radius | distance_to_active_zone | minimum_normal_length | parent_id | centroid_z | centroid_x | centroid_y |
-|-----|------------------|--------------|-------------------------|-----------------------|-----------|------------|------------|------------|
+| cid | neurotransmitter | voxel_radius  | distance_to_active_zone | minimum_normal_length | parent_id | centroid_z | centroid_x | centroid_y |
+|-----|------------------|---------------|-------------------------|-----------------------|-----------|------------|------------|------------|
 | 0   | glutamate        | 26.9129       | 705.2450                | 23                    | 1         | 4505.232   | 1996.224   | 4953.6     |
 | 1   | glutamate        | 25.5388       | 615.0213                | 23                    | 1         | 4505.232   | 1996.224   | 4953.6     |
 | 2   | glutamate        | 29.5260       | 513.0701                | 23                    | 1         | 4505.232   | 1996.224   | 4953.6     |
